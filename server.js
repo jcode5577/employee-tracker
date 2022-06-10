@@ -10,8 +10,8 @@ require("dotenv").config();
 // connection to database
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: process.env.MYSQL_PASSWORD,
+  user: "john.hamilton5577@gmail.com",
+  password: "RunThisApplication4u2day!",
   database: "employee_db",
 });
 
