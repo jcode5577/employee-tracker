@@ -38,6 +38,6 @@ This app uses the following technologies:
 
 #### Contact me at:
 
-Email: tj.tieso@gmail.com
+Email: john.hamilton5577@gmail.com
 
-Github: [tj-tieso](https://github.com/tj-tieso)
+Github: [jcode5577](https://github.com/jcode5577)

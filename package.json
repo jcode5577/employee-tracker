@@ -9,7 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jcode5577/employee-tracker"
+   
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "",
+  "homepage": "https://github.com/jcode5577/employee-tracker/blob/main/README.md",
   "dependencies": {
     "express": "^4.18.1",
     "inquirer": "^8.2.4",
