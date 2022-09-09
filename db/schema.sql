@@ -1,33 +1,32 @@
-DROP DATABASE IF EXISTS employee_db;
-CREATE DATABASE employee_db;
-USE employee_db; 
+-- drop tables statements
+-- roles must be dropped before departments due to the foreign key constraint that requires the departments table to exist
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS departments;
 
-CREATE TABLE department (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+-- DEPT table
+CREATE TABLE departments (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE role (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(30) NOT NULL, 
-    salary DECIMAL NOT NULL,
-    department_id INTEGER, 
-    INDEX dep_ind (department_id),
-    CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE SET NULL
+-- ROLE table
+CREATE TABLE roles (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL(9,0) NOT NULL,
+    department_id INTEGER,
+    CONSTRAINT fk_department
+        FOREIGN KEY (department_id)
+        REFERENCES departments(id)
+        ON DELETE SET NULL
 );
 
-CREATE TABLE employee (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE employees (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
-    role_id INTEGER, 
-    INDEX role_ind (role_id),
-    CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE SET NULL,
-    manager_id INTEGER,
-    INDEX manager_ind (manager_id),
-    CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE SET NULL
+    department_id INTEGER,
+    title_id INTEGER,
+    manager_id VARCHAR(30)
 );
-
-
-
-

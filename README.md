@@ -1,25 +1,43 @@
-# Employee-Tracker
-  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
-  
-  ## Description 
-  An Application used to manage a company's employee database using Node.js, Inquirer, and MySQL.
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation 
-  This application requires Node.js inquirer, console.table and mysql2. To start the application run npm start. to View database from MySQL run mysql -u root -p.
-  ## Usage 
-  This application will allow users to view, add, and edit employees,roles, departments, and managers.
-  ## License 
-  This project is license under MIT
-  ## Contributing 
-  
-  ## Tests
-  There are no tests for this application.
-  ## Questions
-  If you have any questions about this projects, please contact me directly at john.hamilton5577@gmail.com. You can view more of my projects at https://github.com/jcode5577.
+# backend-on-track
+
+Week 12 SQL Challenge
+
+## Project Description
+
+## Table of Contents
+
+- [Website](#website)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributors](#contributors)
+- [Questions](#questions)
+
+## Website
+
+Video walkthrough of application [here.](https://drive.google.com/file/d/1V16fbvdWf-a4XlcDiWd8hyi-i6RbHfd_/view)
+
+GitHub Repo:
+
+## Usage
+
+![image]
+
+## Technologies
+
+This app uses the following technologies:
+
+- [Heroku](https://www.heroku.com/)
+- [Express](https://www.npmjs.com/package/express)
+- [mySQL2](https://www.npmjs.com/package/mysql2)
+
+## Contributors
+
+`inputCheck.js` and `inputCheck.test.js` provided by BCS Module 12
+
+## Questions
+
+#### Contact me at:
+
+Email: tj.tieso@gmail.com
+
+Github: [tj-tieso](https://github.com/tj-tieso)
